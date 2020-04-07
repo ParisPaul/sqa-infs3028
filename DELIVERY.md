@@ -21,6 +21,21 @@ As a team, you should not blame each other for bad time estimation because a use
 <!-- ![Task estimation diagram](./resources/figure1.png)   -->
 <!-- _Figure 1: Define user stories from substantial tasks_ -->
 
+### Use a non-linear scale
+Several companies are using user story points instead of time format (e.g. minute hour, week, …) nowadays. User story points rate the relative effort of work in a Fibonacci-like format : 0, 1, 2, 3, 5, 8, 13, 21, etc.
+First, find the smallest defined user story of a previously selected epic and assign it a 1 as baseline. Then compare each other task to the baseline item and assign a value base on a comparison following those factors: size, difficulty, uncertainty and risk. Finally, assign user stories to each member of the development team equally by following those rates.
+
+
+### Create your user stories
+
+We have talked a lot about User Stories (US) and let me define this a bit more. When writing an US focus on providing clarity about your product features — the what, not the how. To write an user story you need to define who it concerns, what is the goal, and what it is for in the following format:
+```gherkin
+As a <role or person>
+I can <goal/need>
+So that <why>
+```
+
+Each US should be seen as a feature, that needs to be tested and documented.
 ***
 
 ## Coding standards
