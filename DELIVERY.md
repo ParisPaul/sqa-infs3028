@@ -47,4 +47,13 @@ Each US should be seen as a feature, that needs to be tested and documented.
 
 ## Sources
 
+### Task estimation
+https://www.agilealliance.org/glossary/split  
+https://www.atlassian.com/agile/project-management/estimation  
+https://www.atlassian.com/agile/project-management/epics-stories-themes  
+https://www.planisware.com/hub/blog/10-best-practices-project-estimation  
+https://thedigitalbusinessanalyst.co.uk/how-to-estimate-agile-projects-93aeb16d3dd2  
+https://thedigitalbusinessanalyst.co.uk/best-practices-for-agile-estimation-a3d4435a776a  
+https://www.freecodecamp.org/news/how-and-why-to-write-great-user-stories-f5a110668246  
+
 ***
