@@ -15,6 +15,58 @@ Internally, there are 4 teams at PuppyPlanner: the mobile application team made 
 
 ## Coding standards
 
+### Introduction to Gitflow
+Gitflow is a strict branching model designed around the project release imagined by Vincent Driessen about 10 years ago. It probably remains the most popular Git workflow design nowadays. Gitflow simplicity might have made the tool's reputation. This is why PuppyPlanner developers must use this Git workflow.  
+
+There are only 5 types of branch allowed in this model :  
+- **Master** is unique and contains the official release history.  
+- **Develop** is unique too and serves as an integration branch for features.  
+- **Feature** branches are created when a new feature needs to be added to the project.  
+- **Release** branches group features merged on develop before being pushed on master.  
+- **Hotfix** branches are made for quick patch production releases.  
+
+### Gitflow configuration and workflow
+First of all, it is necessary to get the Git project on the machine. We recommend to install it on Windows since it is the most common Operating System at PuppyPlanner. You have to install [Git](https://git-scm.com/download/win) on the computer. Then, you will need to clone the project on the machine by entering the following command on the Git Bash prompt freshly installed :
+```git
+git clone git@github.com:<github-username>/sqa-infs3028.git
+```
+You now have a local version of the project on your computer. If you want to add a feature to the project, please enter the following command :
+```git
+git flow feature start feature_branch
+```
+It is worth noting that feature branch names must follow the [snake case](https://fr.wikipedia.org/wiki/Snake_case) convention. When you finished the feature development and you want to merge your work on the develop branch, please enter the following command :
+```git
+git flow feature finish feature_branch
+```
+Finally, when the develop branch contains all the predicted features of the next release, you can create a release branch by entering the following :
+```git
+git flow release start 1.0.1
+```
+Of course, feel free to replace the release number of this example by the actual release number. In addition to this release number, you have to fill the CHANGELOG.md file with your commits; you can find this file at the project root. This file has been written in Markdown and must be completed in accordance with the following template :
+```Markdown
+## [Next release number] - today’s date
+### Added
+- first commit made for added features
+- second commit made for added features
+- ...
+### Updated
+- first commit made for updated features
+- second commit made for updated features
+- ...
+### Removed
+- first commit made for removed features
+- second commit made for removed features
+- ...
+```
+If there is nothing in one of the parts, don't add it in the file CHANGELOG.md. Finally, if you are not comfortable with command line, feel free to use [GUI](https://www.computerhope.com/jargon/g/gui.htm) tools like [GitKraken](https://support.gitkraken.com/git-workflows-and-extensions/git-flow/) or [SourceTree](https://www.sourcetreeapp.com/) made by Atlassian.
+
+### Insure JavaScript code quality
+<!-- TODO add resource picture -->
+<!-- ![ESLint Screenshot](./resources/eslint-screenshot.png)   -->
+<!-- _Figure 2: Screenshot of the ESLint plugin for JetBrains_ -->
+
+The seventh version of ESLint has been released in February 2020; so less than two month before this handbook fulfillment. Shortly, ESLint is a pluggable linter for JavaScript that finds and fixes problems in the code. This tool not only standardize the code within a team but also in the whole company because all parts of PuppyPlanner have been thought to be based on Node.js. Briefly, about PuppyPlanner, the web part has been developed in [React](https://reactjs.org/), the mobile part has been developed with [React Native](https://reactnative.dev/) and the core is based on [Node.js](https://nodejs.org/). Needless to say, the installation will be quite tough because each member of the company who develops will have to do a code refactoring. This is why developers are strongly advised to use [WebStorm](https://www.jetbrains.com/webstorm/) - an IDE made by JetBrains - and download the dedicated [ESLint plugin](https://www.jetbrains.com/help/webstorm/eslint.html).
+
 ***
 
 ## Code reviews
