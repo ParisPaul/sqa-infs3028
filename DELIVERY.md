@@ -1,5 +1,4 @@
-<!-- TODO add resource picture -->
-<!-- ![PuppyPlanner Logo](./resources/logo.png)   -->
+![PuppyPlanner Logo](./resources/logo.png)  
 # Software quality handbook
 
 ## Introduction  
@@ -61,9 +60,8 @@ Of course, feel free to replace the release number of this example by the actual
 If there is nothing in one of the parts, don't add it in the file CHANGELOG.md. Finally, if you are not comfortable with command line, feel free to use [GUI](https://www.computerhope.com/jargon/g/gui.htm) tools like [GitKraken](https://support.gitkraken.com/git-workflows-and-extensions/git-flow/) or [SourceTree](https://www.sourcetreeapp.com/) made by Atlassian.
 
 ### Insure JavaScript code quality
-<!-- TODO add resource picture -->
-<!-- ![ESLint Screenshot](./resources/eslint-screenshot.png)   -->
-<!-- _Figure 2: Screenshot of the ESLint plugin for JetBrains_ -->
+![ESLint Screenshot](./resources/eslint-screenshot.png)  
+_Figure 2: Screenshot of the ESLint plugin for JetBrains_
 
 The seventh version of ESLint has been released in February 2020; so less than two month before this handbook fulfillment. Shortly, ESLint is a pluggable linter for JavaScript that finds and fixes problems in the code. This tool not only standardize the code within a team but also in the whole company because all parts of PuppyPlanner have been thought to be based on Node.js. Briefly, about PuppyPlanner, the web part has been developed in [React](https://reactjs.org/), the mobile part has been developed with [React Native](https://reactnative.dev/) and the core is based on [Node.js](https://nodejs.org/). Needless to say, the installation will be quite tough because each member of the company who develops will have to do a code refactoring. This is why developers are strongly advised to use [WebStorm](https://www.jetbrains.com/webstorm/) - an IDE made by JetBrains - and download the dedicated [ESLint plugin](https://www.jetbrains.com/help/webstorm/eslint.html).
 
