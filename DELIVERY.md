@@ -67,6 +67,21 @@ If there is nothing in one of the parts, don't add it in the file CHANGELOG.md. 
 
 The seventh version of ESLint has been released in February 2020; so less than two month before this handbook fulfillment. Shortly, ESLint is a pluggable linter for JavaScript that finds and fixes problems in the code. This tool not only standardize the code within a team but also in the whole company because all parts of PuppyPlanner have been thought to be based on Node.js. Briefly, about PuppyPlanner, the web part has been developed in [React](https://reactjs.org/), the mobile part has been developed with [React Native](https://reactnative.dev/) and the core is based on [Node.js](https://nodejs.org/). Needless to say, the installation will be quite tough because each member of the company who develops will have to do a code refactoring. This is why developers are strongly advised to use [WebStorm](https://www.jetbrains.com/webstorm/) - an IDE made by JetBrains - and download the dedicated [ESLint plugin](https://www.jetbrains.com/help/webstorm/eslint.html).
 
+### Write consistent commit messages
+
+PuppyPlanner beginnings turned quite chaotic because of liberties given to each teams; in particular, git commits are absolutely senseless. Thankfully, Git gives many possible configuration out of the box and the `commit.template` command is especially interesting regarding commits. Please enter the following command to set up the PuppyPlanner git message on your machine :
+```git
+git config --local commit.template “$HOME/<path-to-cloned-project>/.gitmessage”
+```
+This configuration will ensure you write proper commit messages. The commit command is now the following :
+```git
+git commit
+```
+That’s all folks ! Well, not exactly because this command will now open your default text editor and you will have to complete the commit message in accordance with the displayed template but you don’t need the `-m “<commit message>”` extension anymore. Then, all you need to do is enter the following and you are good :
+```git 
+git push origin <feature_branch>
+```
+
 ***
 
 ## Code reviews
