@@ -59,6 +59,23 @@ As you will see, reviewing is a tedious task, therefore, to ease your reviewer�
 
 The two above lists must be taken into account in order to have a smooth and fulfilling experience at code reviewing and for your co-worker’s ease.
 
+### Testing
+
+As mentioned in the code review part, tests are an essential part of a project’s life. All written code must have tests done and tested before committing. We will expect you to do the same. To briefly explain it, unit and functional testing is a proven technique for ensuring software quality for the following reasons:
+- **Validation**: tests validate that each piece of your software not only works properly today but continues to work in the future.  
+- **Defects**: test identify defects at an early stage of development, which reduce the cost to fix them in the later stages of the development.  
+- **Safer to Refactor**: test can be quickly run repeatedly as we code to ensure the behaviour has not changed.  
+- **Different perspective**: encourage the developer to take corner cases and error condition into account in their implementation.  
+- **Code review**: testing helps understand how a specific part of code is supposed to run.  
+
+To ensure a good development of test throughout the company, you will have to follow these points:
+- **Tests must be trustworthy**: The test must fail the code is broken and only if the code is broken.  
+- **Maintainable and readable**: As the code evolves, the test should too, therefore the test must be written following the company’s style and have proper naming convention.  
+- **Single-use case**: One test only test one case!  
+- **Isolation**: Test should be able to be run on **ANY** machine, in any order, without affecting each other.  
+
+> The tests will be run automatically on every commit on Release, Develop and Master. You will be able to run the test at any time on your machine.
+
 ***
 
 ## Sources
@@ -68,5 +85,8 @@ https://www.youtube.com/watch?v=PJjmw9TRB7s
 https://stackify.com/unit-testing-basics-best-practices  
 https://www.perforce.com/blog/qac/9-best-practices-for-code-review  
 https://medium.com/palantir/code-review-best-practices-19e02780015f  
+https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters  
+https://dzone.com/articles  unit-testing-best-practices-how-to-get-the-most-ou  
+https://stackoverflow.blog/2019/09/30/how-to-make-good-code-reviews-better  
 
 ***
