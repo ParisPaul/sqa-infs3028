@@ -89,4 +89,16 @@ git push origin <feature_branch>
 
 ## Sources
 
+### Task estimation
+
+### Coding standards
+https://chris.beams.io/posts/git-commit  
+https://rubygarage.github.io/slides/git/gitflow#/15  
+https://nvie.com/posts/a-successful-git-branching-model  
+https://backlog.com/blog/git-commit-messages-bold-daring  
+https://eslint.org/blog/2020/02/whats-coming-in-eslint-7.0.0  
+https://daemotron.github.io/2017/05/02/Git-Flow-Groundhog-Day.html  
+https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow  
+https://thoughtbot.com/blog/better-commit-messages-with-a-gitmessage-template  
+
 ***
