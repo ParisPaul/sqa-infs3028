@@ -17,9 +17,8 @@ Tasks are often substantial blocs of many smaller tasks that development team me
 ### Uncertainty and confidence margins
 As a team, you should not blame each other for bad time estimation because a user story estimation will never be perfect; that’s how it is. To keep the team chin up, you might use uncertainty and confidence margins within estimations. For each task evaluation, vote an uncertainty percentage and a confidence one and apply these percentages in the description. Be careful to ensure that the percentage does not exceed 50%. Otherwise, you probably made a bad estimation of the user-story.
 
-<!-- TODO add resource picture -->
-<!-- ![Task estimation diagram](./resources/figure1.png)   -->
-<!-- _Figure 1: Define user stories from substantial tasks_ -->
+![Task estimation diagram](./resources/figure1.png)  
+_Figure 1: Define user stories from substantial tasks_
 
 ### Use a non-linear scale
 Several companies are using user story points instead of time format (e.g. minute hour, week, …) nowadays. User story points rate the relative effort of work in a Fibonacci-like format : 0, 1, 2, 3, 5, 8, 13, 21, etc.
